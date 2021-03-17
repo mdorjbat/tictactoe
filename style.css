@@ -1,61 +1,110 @@
 .container {
     display: grid;
     grid-gap: 4px;
-    grid-template-rows: 100px 100px 1fr 100px 100px 100px 1fr 100px 1fr;
-    grid-template-columns: 1fr 100px 20px 100px 100px 100px 20px 100px 1fr;
+    grid-template-rows: 100px 70px 1fr 100px 100px 100px 1fr 100px 100px;
+    grid-template-columns: 1fr 20px 20px 100px 100px 100px 20px 100px 1fr;
 
-}
-
-
-@media screen and (max-width: 800px) {
-
-    .player_one {
-        grid-row: 9 ;
-        grid-column: 4 ;
-        font-size: 24px;
-        background: blue;
-
-    }
-
-    .player_two {
-        grid-row: 8 ;
-        grid-column: 4;
-        font-size: 24px;
-        background: yellow;
-    }
 }
 
 .title{
     grid-row: 2;
-    grid-column: 4 / span 3;
+    grid-column: 5;
     font-size: 24px;
-    background: green;
+    background: rgb(163, 194, 194);
     text-align: center;
+    padding: 10px 0;
 
 }
 .player_one {
-    grid-row: 4 / span 2;
-    grid-column: 2;
-    font-size: 24px;
-    background: yellow;
+    grid-row: 2;
+    grid-column: 4;
+    font-size: 20px;
+    background: rgb(163, 194, 194);
+    text-align: center;
+    padding: 20px 0;
 }
 
 .player_two {
-    grid-row: 4 / span 2;
-    grid-column: 8;
-    font-size: 24px;
-    background: yellow;
+    grid-row: 2;
+    grid-column: 6;
+    font-size: 20px;
+    background: rgb(163, 194, 194);
+    text-align: center;
+    padding: 20px 0;
 }
 
 .board {
     grid-row: 4 / span 3;
     grid-column: 4 / span 3;
     font-size: 24px;
-    background: brown;
+    background: 	rgb(20, 31, 31);
 }
 .game_status {
     grid-row: 8;
     grid-column: 4 / span 3;
     font-size: 24px;
-    background: red;
+    background: rgb(163, 194, 194);
+    text-align: center;
+    padding: 25px 0;
+}
+
+.btn1{
+    grid-row: 4;
+    grid-column: 4;
+    font-size: 24px;
+    background: 	rgb(102, 153, 153);
+}
+.btn2{
+    grid-row: 4;
+    grid-column: 5;
+    font-size: 24px;
+    background: 	rgb(102, 153, 153);
+}
+.btn3{
+    grid-row: 4;
+    grid-column: 6;
+    font-size: 24px;
+    background: 	rgb(102, 153, 153);
+}
+.btn4{
+    grid-row: 5;
+    grid-column: 4;
+    font-size: 24px;
+    background: 	rgb(102, 153, 153);
+}
+.btn5{
+    grid-row: 5;
+    grid-column: 5;
+    font-size: 24px;
+    background: 	rgb(102, 153, 153);
+}
+.btn6{
+    grid-row: 5;
+    grid-column: 6;
+    font-size: 24px;
+    background: 	rgb(102, 153, 153);
+}
+.btn7{
+    grid-row: 6;
+    grid-column: 4;
+    font-size: 24px;
+    background: 	rgb(102, 153, 153);
+}
+.btn8{
+    grid-row: 6;
+    grid-column: 5;
+    font-size: 24px;
+    background: 	rgb(102, 153, 153);
+}
+.btn9{
+    grid-row: 6;
+    grid-column: 6;
+    font-size: 24px;
+    background: 	rgb(102, 153, 153);
+}
+.reload{
+    grid-row: 9;
+    grid-column: 4 / span 3;
+    font-size: 24px;
+    background: 	rgb(102, 153, 153)
 }
