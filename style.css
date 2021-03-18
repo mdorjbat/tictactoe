@@ -139,7 +139,7 @@
     font-size: 24px;
     background: red;
     border-radius: 12px;
-
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
 
 .play_again{
@@ -148,7 +148,7 @@
     font-size: 24px;
     background: 	rgb(102, 153, 153);
     border-radius: 12px;
-
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
 .btn1:hover {
     background-color: #4CAF50; /* Green */
