@@ -220,3 +220,4 @@ function allButtonEable(){
     gameB8.disabled=false;
     gameB9.disabled=false;
 }
+gameB1.addEventListener("onmouseover",  () => gameB1.style.backgroundColor = 'red');

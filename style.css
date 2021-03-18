@@ -3,7 +3,6 @@
     grid-gap: 4px;
     grid-template-rows: 1fr 70px 1fr 100px 100px 100px 1fr 70px 70px 70px;
     grid-template-columns: 1fr 100px 100px 100px  1fr;
-
 }
 
 .title{
@@ -22,6 +21,7 @@
     background: rgb(163, 194, 194);
     text-align: center;
     padding: 20px 0;
+
 }
 
 .player_two {
@@ -30,7 +30,9 @@
     font-size: 20px;
     background: rgb(163, 194, 194);
     text-align: center;
+
     padding: 20px 0;
+
 }
 
 .board {
@@ -38,6 +40,7 @@
     grid-column: 2 / span 3;
     font-size: 24px;
     background: 	rgb(20, 31, 31);
+    border-radius: 12px;
 }
 .game_status {
     grid-row: 8;
@@ -46,72 +49,137 @@
     background: rgb(163, 194, 194);
     text-align: center;
     padding: 25px 0;
+    border-radius: 12px;
 }
 
 .btn1{
     grid-row: 4;
     grid-column: 2;
-    font-size: 24px;
+    font-size: 35px;
+    color: black;
     background: 	rgb(102, 153, 153);
+    border-radius: 12px;
 }
 .btn2{
     grid-row: 4;
     grid-column: 3;
-    font-size: 24px;
+    font-size: 35px;
+    color: black;
     background: 	rgb(102, 153, 153);
+    border-radius: 12px;
 }
 .btn3{
     grid-row: 4;
     grid-column: 4;
-    font-size: 24px;
+    font-size: 35px;
+    color: black;
     background: 	rgb(102, 153, 153);
+    border-radius: 12px;
 }
 .btn4{
     grid-row: 5;
     grid-column: 2;
-    font-size: 24px;
+    font-size: 35px;
+    color: black;
     background: 	rgb(102, 153, 153);
+    border-radius: 12px;
 }
 .btn5{
     grid-row: 5;
     grid-column: 3;
-    font-size: 24px;
+    font-size: 35px;
+    color: black;
     background: 	rgb(102, 153, 153);
+    border-radius: 12px;
 }
 .btn6{
     grid-row: 5;
     grid-column: 4;
-    font-size: 24px;
+    font-size: 35px;
+    color: black;
     background: 	rgb(102, 153, 153);
+    border-radius: 12px;
 }
 .btn7{
     grid-row: 6;
     grid-column: 2;
-    font-size: 24px;
+    font-size: 35px;
+    color: black;
     background: 	rgb(102, 153, 153);
+    border-radius: 12px;
 }
 .btn8{
     grid-row: 6;
     grid-column: 3;
-    font-size: 24px;
+    font-size: 35px;
+    color: black;
     background: 	rgb(102, 153, 153);
+    border-radius: 12px;
 }
 .btn9{
     grid-row: 6;
     grid-column: 4;
-    font-size: 24px;
+    font-size: 35px;
+    color: black;
     background: 	rgb(102, 153, 153);
+    border-radius: 12px;
 }
 .reload{
     grid-row: 10;
     grid-column: 2 / span 3;
     font-size: 24px;
     background: red;
+    border-radius: 12px;
 }
 
 .play_again{
     grid-row: 9;
     grid-column: 2 / span 3;
     font-size: 24px;
-    background: 	rgb(102, 153, 153)
+    background: 	rgb(102, 153, 153);
+    border-radius: 12px;
+}
+.btn1:hover {
+    background-color: #4CAF50; /* Green */
+    color: white;
+}
+.btn1:hover {
+    background-color: #4CAF50; /* Green */
+    color: white;
+}
+.btn1:hover {
+    background-color: #4CAF50; /* Green */
+    color: white;
+}
+.btn2:hover {
+    background-color: #4CAF50; /* Green */
+    color: white;
+}
+.btn3:hover {
+    background-color: #4CAF50; /* Green */
+    color: white;
+}
+.btn4:hover {
+    background-color: #4CAF50; /* Green */
+    color: white;
+}
+.btn5:hover {
+    background-color: #4CAF50; /* Green */
+    color: white;
+}
+.btn6:hover {
+    background-color: #4CAF50; /* Green */
+    color: white;
+}
+.btn7:hover {
+    background-color: #4CAF50; /* Green */
+    color: white;
+}
+.btn8:hover {
+    background-color: #4CAF50; /* Green */
+    color: white;
+}
+.btn9:hover {
+    background-color: #4CAF50; /* Green */
+    color: white;
 }
