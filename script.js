@@ -111,10 +111,12 @@ class Game{
                 this.counter = 1;
                 gameStatus.innerText = "Player 1 WON!";
                 playerOneScore++;
+                allButtonDisable();
             }else if(status === "O"){
                 this.counter = 1;
                 gameStatus.innerText = "Player 2 WON!";
                 playerTwoScore++;
+                allButtonDisable();
             }else{
                 if(this.counter === 9){
                     this.counter = 1;
@@ -130,23 +132,17 @@ class Game{
         status = "";
         btnStatus = "";
         gameB1.textContent = btnStatus;
-        gameB1.disabled = false;
         gameB2.textContent = btnStatus;
-        gameB2.disabled = false;
         gameB3.textContent = btnStatus;
-        gameB3.disabled = false;
         gameB4.textContent = btnStatus;
-        gameB4.disabled = false;
         gameB5.textContent = btnStatus;
-        gameB5.disabled = false;
         gameB6.textContent = btnStatus;
-        gameB6.disabled = false;
         gameB7.textContent = btnStatus;
-        gameB7.disabled = false;
         gameB8.textContent = btnStatus;
-        gameB8.disabled = false;
         gameB9.textContent = btnStatus;
-        gameB9.disabled = false;
+
+        allButtonEable();
+
         this.board = [" ", " ", " ", " ", " ", " ", " ", " ", " "];
         this.counter = 1;
         gamePlayerOne.innerText = "Player One Score: " + playerOneScore;
@@ -200,3 +196,26 @@ gameStatus.innerText = "";
 
 gameRestart.addEventListener("click", () => location.reload());
 playAgain.addEventListener("click", () => game.playAgain());
+
+function allButtonDisable(){
+    gameB1.disabled=true;
+    gameB2.disabled=true;
+    gameB3.disabled=true;
+    gameB4.disabled=true;
+    gameB5.disabled=true;
+    gameB6.disabled=true;
+    gameB7.disabled=true;
+    gameB8.disabled=true;
+    gameB9.disabled=true;
+}
+function allButtonEable(){
+    gameB1.disabled=false;
+    gameB2.disabled=false;
+    gameB3.disabled=false;
+    gameB4.disabled=false;
+    gameB5.disabled=false;
+    gameB6.disabled=false;
+    gameB7.disabled=false;
+    gameB8.disabled=false;
+    gameB9.disabled=false;
+}
