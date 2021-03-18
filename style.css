@@ -59,6 +59,7 @@
     color: black;
     background: 	rgb(102, 153, 153);
     border-radius: 12px;
+    transition-duration: 0.4s
 }
 .btn2{
     grid-row: 4;
@@ -67,6 +68,7 @@
     color: black;
     background: 	rgb(102, 153, 153);
     border-radius: 12px;
+    transition-duration: 0.4s
 }
 .btn3{
     grid-row: 4;
@@ -75,6 +77,7 @@
     color: black;
     background: 	rgb(102, 153, 153);
     border-radius: 12px;
+    transition-duration: 0.4s
 }
 .btn4{
     grid-row: 5;
@@ -83,6 +86,7 @@
     color: black;
     background: 	rgb(102, 153, 153);
     border-radius: 12px;
+    transition-duration: 0.4s
 }
 .btn5{
     grid-row: 5;
@@ -91,6 +95,7 @@
     color: black;
     background: 	rgb(102, 153, 153);
     border-radius: 12px;
+    transition-duration: 0.4s
 }
 .btn6{
     grid-row: 5;
@@ -99,6 +104,7 @@
     color: black;
     background: 	rgb(102, 153, 153);
     border-radius: 12px;
+    transition-duration: 0.4s
 }
 .btn7{
     grid-row: 6;
@@ -107,6 +113,7 @@
     color: black;
     background: 	rgb(102, 153, 153);
     border-radius: 12px;
+    transition-duration: 0.4s
 }
 .btn8{
     grid-row: 6;
@@ -115,6 +122,7 @@
     color: black;
     background: 	rgb(102, 153, 153);
     border-radius: 12px;
+    transition-duration: 0.4s
 }
 .btn9{
     grid-row: 6;
@@ -123,6 +131,7 @@
     color: black;
     background: 	rgb(102, 153, 153);
     border-radius: 12px;
+    transition-duration: 0.4s
 }
 .reload{
     grid-row: 10;
@@ -130,6 +139,7 @@
     font-size: 24px;
     background: red;
     border-radius: 12px;
+
 }
 
 .play_again{
@@ -138,6 +148,7 @@
     font-size: 24px;
     background: 	rgb(102, 153, 153);
     border-radius: 12px;
+
 }
 .btn1:hover {
     background-color: #4CAF50; /* Green */
