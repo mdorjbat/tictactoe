@@ -15,6 +15,10 @@ const gameB8 = document.querySelector(".btn8");
 const gameB9 = document.querySelector(".btn9");
 let status = "";
 let btnStatus = "";
+let bleep = new Audio();
+bleep.src = "https://www.myinstants.com/media/sounds/clicksoundeffect.mp3";
+let win = new Audio();
+win.src = "https://www.myinstants.com/media/sounds/12_3.mp3"
 
 let playerOneScore = 0;
 let playerTwoScore = 0;
@@ -111,12 +115,14 @@ class Game{
                 this.counter = 1;
                 gameStatus.innerText = "Player 1 WON!";
                 playerOneScore++;
-                allButtonDisable();
+                allButtonDisable()
+                win.play();
             }else if(status === "O"){
                 this.counter = 1;
                 gameStatus.innerText = "Player 2 WON!";
                 playerTwoScore++;
-                allButtonDisable();
+                allButtonDisable()
+                win.play();
             }else{
                 if(this.counter === 9){
                     this.counter = 1;
@@ -156,39 +162,48 @@ let game = new Game();
 gameStatus.innerText = gameB1.addEventListener("click", function (){
     game.play(0);
     gameB1.textContent = btnStatus;
-    gameB1.disabled=true;});
+    gameB1.disabled=true;
+    bleep.play();});
 
 gameStatus.innerText = gameB2.addEventListener("click", function (){
     game.play(1);
     gameB2.textContent = btnStatus;
-    gameB2.disabled=true;});
+    gameB2.disabled=true;
+    bleep.play()});
 gameStatus.innerText = gameB3.addEventListener("click", function (){
     game.play(2);
     gameB3.textContent = btnStatus;
-    gameB3.disabled=true;});
+    gameB3.disabled=true;
+    bleep.play()});
 gameStatus.innerText = gameB4.addEventListener("click", function (){
     game.play(3);
     gameB4.textContent = btnStatus;
+    bleep.play()
     gameB4.disabled=true;});
 gameStatus.innerText = gameB5.addEventListener("click", function (){
     game.play(4);
     gameB5.textContent = btnStatus;
+    bleep.play()
     gameB5.disabled=true;});
 gameStatus.innerText = gameB6.addEventListener("click", function (){
     game.play(5);
     gameB6.textContent = btnStatus;
+    bleep.play()
     gameB6.disabled=true;});
 gameStatus.innerText = gameB7.addEventListener("click", function (){
     game.play(6);
     gameB7.textContent = btnStatus;
+    bleep.play()
     gameB7.disabled=true;});
 gameStatus.innerText = gameB8.addEventListener("click", function (){
     game.play(7);
     gameB8.textContent = btnStatus;
+    bleep.play()
     gameB8.disabled=true;});
 gameStatus.innerText = gameB9.addEventListener("click", function (){
     game.play(8);
     gameB9.textContent = btnStatus;
+    bleep.play()
     gameB9.disabled=true;});
 
 gameStatus.innerText = "";
