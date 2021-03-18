@@ -147,6 +147,7 @@ class Game{
         this.counter = 1;
         gamePlayerOne.innerText = "Player One Score: " + playerOneScore;
         gamePlayerTwo.innerText = "Player Two Score: " + playerTwoScore;
+        gameStatus.innerText = "";
     }
 }
 
