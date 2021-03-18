@@ -1,5 +1,5 @@
-# tictactoe
-Tic Tac Toe
+# Tictactoe
+
 
 This is famous game of tic-tac-toe. Two players take turn to mark
 their move on a 3x3 board. The first player automatically 

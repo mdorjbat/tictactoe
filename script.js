@@ -3,6 +3,7 @@ const gamePlayerOne = document.querySelector(".player_one");
 const gamePlayerTwo = document.querySelector(".player_two");
 const gameStatus = document.querySelector(".game_status");
 const gameRestart = document.querySelector(".reload");
+const playAgain = document.querySelector(".play_again")
 const gameB1 = document.querySelector(".btn1");
 const gameB2 = document.querySelector(".btn2");
 const gameB3 = document.querySelector(".btn3");
@@ -14,6 +15,9 @@ const gameB8 = document.querySelector(".btn8");
 const gameB9 = document.querySelector(".btn9");
 let status = "";
 let btnStatus = "";
+
+let playerOneScore = 0;
+let playerTwoScore = 0;
 
 class Game{
     constructor() {
@@ -106,10 +110,11 @@ class Game{
             if( status === "X"){
                 this.counter = 1;
                 gameStatus.innerText = "Player 1 WON!";
-
+                playerOneScore++;
             }else if(status === "O"){
                 this.counter = 1;
                 gameStatus.innerText = "Player 2 WON!";
+                playerTwoScore++;
             }else{
                 if(this.counter === 9){
                     this.counter = 1;
@@ -120,6 +125,32 @@ class Game{
                 }
 
             }
+    }
+    playAgain(){
+        status = "";
+        btnStatus = "";
+        gameB1.textContent = btnStatus;
+        gameB1.disabled = false;
+        gameB2.textContent = btnStatus;
+        gameB2.disabled = false;
+        gameB3.textContent = btnStatus;
+        gameB3.disabled = false;
+        gameB4.textContent = btnStatus;
+        gameB4.disabled = false;
+        gameB5.textContent = btnStatus;
+        gameB5.disabled = false;
+        gameB6.textContent = btnStatus;
+        gameB6.disabled = false;
+        gameB7.textContent = btnStatus;
+        gameB7.disabled = false;
+        gameB8.textContent = btnStatus;
+        gameB8.disabled = false;
+        gameB9.textContent = btnStatus;
+        gameB9.disabled = false;
+        this.board = [" ", " ", " ", " ", " ", " ", " ", " ", " "];
+        this.counter = 1;
+        gamePlayerOne.innerText = "Player One Score: " + playerOneScore;
+        gamePlayerTwo.innerText = "Player Two Score: " + playerTwoScore;
     }
 }
 
@@ -168,3 +199,4 @@ gameStatus.innerText = "";
 // let temp = localStorage.getItem("player1");
 
 gameRestart.addEventListener("click", () => location.reload());
+playAgain.addEventListener("click", () => game.playAgain());
