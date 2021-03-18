@@ -10,3 +10,7 @@ vertically, or diagonally. To star a game again press RESTART button.
 The game can be played on any device with a browser and an 
 internet connection. 
 
+Use following link to play the game:
+
+https://mdorjbat.github.io/tictactoe/
+
