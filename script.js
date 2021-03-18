@@ -113,7 +113,7 @@ class Game{
             }else{
                 if(this.counter === 9){
                     this.counter = 1;
-                    gameStatus.innerText = "This is Tie";
+                    gameStatus.innerText = "This is a Tie";
                 }else{
                     this.counter++;
                     gameStatus.innerText =  this.counter %2 === 1 ? "Now Player1's turn": "Now Player2's turn";
@@ -164,5 +164,7 @@ gameStatus.innerText = gameB9.addEventListener("click", function (){
     gameB9.disabled=true;});
 
 gameStatus.innerText = "";
+// Window.localStorage.setItem("player1", 10);
+// let temp = localStorage.getItem("player1");
 
 gameRestart.addEventListener("click", () => location.reload());
