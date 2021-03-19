@@ -24,6 +24,8 @@ Used: CSS, HTML, JAVASCRIPT.
 
 Link to wireframe: https://wireframe.cc/6Nw2kK
 
+![IMG_0308](https://user-images.githubusercontent.com/79872462/111795103-e563ea80-8894-11eb-812a-39c91c515e74.jpg)
+
 Game started with planning on the paper and transferred to the wireframe.
 After a few modifications, I ended up choosing layout that's friendly both
 on a desktop and on a mobile device. First prepared web layout using CSS 
