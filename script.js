@@ -17,6 +17,7 @@ let status = "";
 let btnStatus = "";
 let bleep = new Audio();
 bleep.src = "https://www.myinstants.com/media/sounds/clicksoundeffect.mp3";
+
 let win = new Audio();
 win.src = "https://www.myinstants.com/media/sounds/12_3.mp3"
 
@@ -123,6 +124,7 @@ class Game{
                 playerTwoScore++;
                 allButtonDisable()
                 win.play();
+
             }else{
                 if(this.counter === 9){
                     this.counter = 1;
@@ -207,8 +209,7 @@ gameStatus.innerText = gameB9.addEventListener("click", function (){
     gameB9.disabled=true;});
 
 gameStatus.innerText = "";
-// Window.localStorage.setItem("player1", 10);
-// let temp = localStorage.getItem("player1");
+
 
 gameRestart.addEventListener("click", () => location.reload());
 playAgain.addEventListener("click", () => game.playAgain());
@@ -235,4 +236,4 @@ function allButtonEable(){
     gameB8.disabled=false;
     gameB9.disabled=false;
 }
-gameB1.addEventListener("onmouseover",  () => gameB1.style.backgroundColor = 'red');
+
