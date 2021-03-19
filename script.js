@@ -1,5 +1,5 @@
 // ----------------------------Initializtion----------------------------------
-
+// This part of the code initializes variables and connects html with the code.
 const gameTitle = document.querySelector(".title");
 const gamePlayerOne = document.querySelector(".player_one");
 const gamePlayerTwo = document.querySelector(".player_two");
@@ -27,7 +27,10 @@ let playerOneScore = 0;
 let playerTwoScore = 0;
 
 // --------------------------Game Class----------------------------------
-
+// This is game class. It contains 2 variables board and counter.
+// Board variable contains game status. Counter variable counts how many
+// done so far. Game class also contains 5 functions to set board with a value,
+// check the winning status of the game, and initialize the game.
 class Game{
     constructor() {
 
@@ -163,10 +166,12 @@ class Game{
     }
 }
 //------------------------------Object Creation--------------------------------
+// initialization and creation of game object
 
 let game = new Game();
 
 //------------------------------Event Handler ---------------------------------
+//The following code handles the events.
 
 gameStatus.innerText = gameB1.addEventListener("click", function (){
     game.play(0);
@@ -223,6 +228,7 @@ gameRestart.addEventListener("click", () => location.reload());
 playAgain.addEventListener("click", () => game.playAgain());
 
 //-----------------------Additional Function---------------------------------------
+// Once game ends all the keys should be locked until new game starts.
 
 function allButtonDisable(){
     gameB1.disabled=true;
