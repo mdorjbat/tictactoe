@@ -16,7 +16,7 @@ const gameB9 = document.querySelector(".btn9");
 let status = "";
 let btnStatus = "";
 let bleep = new Audio();
-bleep.src = "https://www.myinstants.com/media/sounds/clicksoundeffect.mp3";
+bleep.src = "https://www.soundjay.com/button/sounds/beep-07.mp3";
 
 let win = new Audio();
 win.src = "https://www.myinstants.com/media/sounds/12_3.mp3"
