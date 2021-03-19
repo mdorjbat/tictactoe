@@ -1,3 +1,5 @@
+// ----------------------------Initializtion----------------------------------
+
 const gameTitle = document.querySelector(".title");
 const gamePlayerOne = document.querySelector(".player_one");
 const gamePlayerTwo = document.querySelector(".player_two");
@@ -23,6 +25,8 @@ win.src = "https://www.myinstants.com/media/sounds/12_3.mp3"
 
 let playerOneScore = 0;
 let playerTwoScore = 0;
+
+// --------------------------Game Class----------------------------------
 
 class Game{
     constructor() {
@@ -131,7 +135,7 @@ class Game{
                     gameStatus.innerText = "This is a Tie";
                 }else{
                     this.counter++;
-                    gameStatus.innerText =  this.counter %2 === 1 ? "Now Player1's turn": "Now Player2's turn";
+                    gameStatus.innerText =  this.counter %2 === 1 ? "Now Player 1's turn": "Now Player 2's turn";
                 }
 
             }
@@ -158,8 +162,11 @@ class Game{
         gameStatus.innerText = "";
     }
 }
+//------------------------------Object Creation--------------------------------
 
 let game = new Game();
+
+//------------------------------Event Handler ---------------------------------
 
 gameStatus.innerText = gameB1.addEventListener("click", function (){
     game.play(0);
@@ -208,11 +215,14 @@ gameStatus.innerText = gameB9.addEventListener("click", function (){
     bleep.play()
     gameB9.disabled=true;});
 
+
 gameStatus.innerText = "";
 
 
 gameRestart.addEventListener("click", () => location.reload());
 playAgain.addEventListener("click", () => game.playAgain());
+
+//-----------------------Additional Function---------------------------------------
 
 function allButtonDisable(){
     gameB1.disabled=true;
